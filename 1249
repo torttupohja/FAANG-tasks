@@ -1,0 +1,16 @@
+class Solution(object):
+    def minRemoveToMakeValid(self, s):
+        final_str = ''
+        par_index = []
+        for i in range(len(s)):
+            if s[i] == '(':
+                final_str += s[i]
+                par_index.append(i)
+            elif s[i] == ')' and len(par_index) == 0:
+                final_str[i:]
+            elif s[i] == ')' and len(par_index) > 0:
+                final_str += s[i]
+                par_index.pop(-1)
+            else:
+                final_str += s[i]
+        return final_str
