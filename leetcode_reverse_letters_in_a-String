@@ -1,0 +1,18 @@
+def reverse_letters_in_a_string(word):
+    string = ''
+    for char in range(len(word) - 1, -1, -1):
+        string = string + word[char]
+    print(type(string))
+    return string
+
+def test_reverse():
+    assert reverse_letters_in_a_string("word") == "drow"
+
+def test_reverse_w_num():
+    assert reverse_letters_in_a_string("wor111d") == "d111row"
+
+def test_with_wrong_input(x):
+    assert (type(x) is str), 'Only strings are accepted'
+
+def test_empty_string(x):
+    assert len(x)>0, 'String cannot be empty'
