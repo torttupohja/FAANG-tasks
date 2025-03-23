@@ -10,3 +10,8 @@ def removeDuplicates(nums):
             k += 1
 
     return k
+
+"""
+Time Complexity: O(n) – One pass through the array.
+Space Complexity: O(1) – In-place modification, no extra space used.
+"""
