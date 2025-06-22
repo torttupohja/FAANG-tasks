@@ -27,3 +27,12 @@ def canFinish(numCourses, prerequisites):
             return False
 
     return True
+
+"""
+Time Complexity: O(V + E)
+V = number of courses, E = number of prerequisite pairs
+
+Space Complexity: O(V + E)
+For the graph and the visited list
+DFS stack depth up to O(V) in worst case
+"""
