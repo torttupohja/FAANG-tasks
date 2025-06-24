@@ -27,3 +27,11 @@ def findOrder(numCourses, prerequisites):
         return order
     else:
         return []  # Cycle detected
+
+"""
+Time Complexity: O(V + E)
+V = number of courses, E = number of prerequisites
+
+Space Complexity: O(V + E)
+Graph + in-degree array + queue
+"""
