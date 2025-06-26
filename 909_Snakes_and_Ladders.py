@@ -31,3 +31,11 @@ def snakesAndLadders(board):
                 queue.append((next_square, moves + 1))
 
     return -1  # Unreachable
+
+"""
+Time Complexity: O(n²)
+We may visit every square once. Each has up to 6 edges (dice rolls).
+
+Space Complexity: O(n²)
+For visited set and queue.
+"""
