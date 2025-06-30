@@ -26,3 +26,11 @@ def minMutation(startGene, endGene, bank):
     return -1  # No path found
 
 """
+Time Complexity: O(N * L * 4)
+N = number of genes in the bank
+L = length of each gene (8)
+We try 3 mutations per position (4 options − 1 current letter)
+
+Space Complexity: O(N)
+For visited set and queue
+"""
