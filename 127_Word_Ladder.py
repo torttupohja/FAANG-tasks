@@ -25,3 +25,13 @@ def ladderLength(beginWord, endWord, wordList):
                     queue.append((next_word, steps + 1))
 
     return 0  # No transformation sequence found
+
+"""
+Time Complexity: O(N * L * 26)
+N = number of words in wordList
+L = length of each word
+26 possibilities per character
+
+Space Complexity: O(N)
+For word set, visited set, and BFS queue
+"""
