@@ -36,3 +36,19 @@ class WordDictionary:
                 return dfs(index + 1, node.children[char])
 
         return dfs(0, self.root)
+
+"""
+addWord(word):
+Time: O(L)
+L = length of the word.
+
+Space: O(L)
+New nodes may be created for each character.
+
+search(word):
+Best Case Time: O(L) (no . wildcards)
+Worst Case Time: O(26^d)
+Where d is the number of . wildcards (branches tried).
+
+Space: O(L) recursion depth for DFS
+"""
