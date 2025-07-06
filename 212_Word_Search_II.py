@@ -48,3 +48,16 @@ def findWords(board, words):
             dfs(r, c, root)
 
     return result
+
+"""
+Time Complexity:
+Building Trie: O(W * L)
+(W = number of words, L = average word length)
+DFS Search: O(M * N * 4^L) in the worst case
+(M x N = board size, L = max word length)
+
+Space Complexity:
+Trie: O(W * L)
+Call stack: up to O(L) for DFS
+Visited state is maintained in-place by marking with '#'
+"""
