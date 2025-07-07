@@ -24,3 +24,11 @@ def letterCombinations(digits):
     backtrack(0, [])
     return result
 
+"""
+Time Complexity: O(4^n)
+Worst case when all digits map to 4 letters (e.g., '7' or '9')
+n = number of digits
+
+Space Complexity: O(n)
+For recursion call stack and temporary path
+"""
