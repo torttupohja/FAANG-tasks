@@ -15,3 +15,12 @@ def combine(n, k):
 
     backtrack(1, [])
     return result
+
+"""
+Time Complexity: O(C(n, k))
+Where C(n, k) is the number of combinations (n choose k)
+
+Space Complexity:
+O(k) recursion depth
+Output space: O(C(n, k) * k) to store all combinations
+"""
