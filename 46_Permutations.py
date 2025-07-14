@@ -19,3 +19,12 @@ def permute(nums):
 
     backtrack([], [False] * len(nums))
     return result
+
+"""
+Time Complexity: O(n!)
+There are n! permutations of a list of n distinct elements.
+
+Space Complexity:
+O(n) for the recursion stack
+O(n!) for storing the result
+"""
