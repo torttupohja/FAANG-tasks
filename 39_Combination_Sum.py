@@ -21,3 +21,9 @@ def combinationSum(candidates, target):
 
     backtrack(0, target)
     return result
+
+"""
+Time complexity: O(S)
+Space complexity:
+Recursion/Path: 𝑂(𝑇)
+Output: size of result (can be large in the worst case).
