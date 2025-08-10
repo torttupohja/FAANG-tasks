@@ -22,3 +22,8 @@ def totalNQueens(n):
 
     backtrack(0)
     return count
+
+"""
+Time Complexity: O(n!)
+Space Complexity: O(n)
+"""
