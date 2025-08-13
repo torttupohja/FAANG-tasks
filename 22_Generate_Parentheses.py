@@ -21,3 +21,10 @@ def generateParenthesis(n):
 
     backtrack(0, 0, [])
     return result
+
+"""
+Time: 
+O(Cn) 
+Space: 
+O(n) recursion depth (excluding output)
+"""
