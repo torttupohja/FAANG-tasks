@@ -26,3 +26,8 @@ def exist(board, word):
             if dfs(r, c, 0):
                 return True
     return False
+
+"""
+time complexity: O(m * n * 4^L) where L = len(word)
+space complexity: O(L) recursion depth (in-place marking, no extra visited grid)
+"""
