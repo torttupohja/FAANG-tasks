@@ -32,3 +32,8 @@ def merge(l1, l2):
         tail = tail.next
     tail.next = l1 or l2
     return dummy.next
+
+"""
+time complexity: O(n log n)
+space complexity: O(log n) due to recursion stack
+"""
