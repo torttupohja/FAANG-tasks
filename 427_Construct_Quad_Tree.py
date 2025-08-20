@@ -34,3 +34,8 @@ def construct(grid):
         return Node(True, False, tl, tr, bl, br)
 
     return build(0, 0, n)
+
+"""
+time complexity: O(n^2 log n) in the worst case (naive uniform checks)
+space complexity: O(n^2) for the tree nodes; recursion depth O(log n)
+"""
