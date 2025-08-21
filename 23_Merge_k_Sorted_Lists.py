@@ -23,3 +23,8 @@ def mergeKLists(lists):
             heapq.heappush(heap, (node.next.val, i, node.next))
 
     return dummy.next
+
+"""
+time complexity: O(N log k), where N is the total number of nodes and k is the number of lists
+space complexity: O(k) for the heap
+"""
